@@ -1,5 +1,26 @@
 # Highlight.js
 
+## Combeenation Changes
+
+This fork contains a Hive language specification that can e.g. be used on docs.combeenation.com.  
+In order to use it, highlight.js must be built from source – thus this fork.
+
+**Perform all Combeenation-related modifications in the `combeenation` branch!**
+
+Build steps:
+
+* `npm install` to get all dependencies
+* `node tools/build.js :common hive` for regular build
+  * `-n` (no compression) for debugging
+  * `--help` for other build options
+* open `demo/index.html` to inspect results 
+
+The build produces a `highlight.pack.js` file that can be indcluded in HTML pages.  
+
+Due to the way highlight.js works, any of its themes can be used with our custom language.
+
+-----
+
 [![Build Status](https://travis-ci.org/isagalaev/highlight.js.svg?branch=master)](https://travis-ci.org/isagalaev/highlight.js)
 
 Highlight.js is a syntax highlighter written in JavaScript. It works in
