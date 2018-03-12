@@ -1,0 +1,5 @@
+if input is Empty then
+  { name: "something".take(5), prices: [10, 13, 15] }
+else
+  """Embedded statement: {=configuration.Id + 10} """
+end
